@@ -10,6 +10,8 @@ import {UserContextProvider} from "./components/Context/UserContext"
 import Private from './components/Propcomponent/private';
 import Profile from './components/Propcomponent/Profile';
 import ShuffleName from './components/CallBackHook/ShuffleName';
+import Button from './components/Propcomponent/WrappingHtml/Button';
+import Input from './components/Propcomponent/WrappingHtml/input';
 function App() {
 
  
@@ -26,7 +28,12 @@ function App() {
     <Private isLoggin={true} Component={Profile}/>
     <h2>useCallback practices</h2>
     <ShuffleName></ShuffleName>
+  <h2>Wrapping html element</h2>
+  <Button variant="primary" onClick={e=>console.log(e.target)}>Hellow</Button>
+  <Input></Input>
   </ThemeContextProvider>
+
+
   )
 }
 
