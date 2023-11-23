@@ -12,6 +12,7 @@ import Profile from './components/Propcomponent/Profile';
 import ShuffleName from './components/CallBackHook/ShuffleName';
 import Button from './components/Propcomponent/WrappingHtml/Button';
 import Input from './components/Propcomponent/WrappingHtml/input';
+import CountriesPage from './components/Effect/CountriesPage';
 function App() {
 
  
@@ -31,6 +32,7 @@ function App() {
   <h2>Wrapping html element</h2>
   <Button variant="primary" onClick={e=>console.log(e.target)}>Hellow</Button>
   <Input></Input>
+  <CountriesPage/>
   </ThemeContextProvider>
 
 
