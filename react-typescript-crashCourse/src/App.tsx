@@ -13,6 +13,8 @@ import ShuffleName from './components/CallBackHook/ShuffleName';
 import Button from './components/Propcomponent/WrappingHtml/Button';
 import Input from './components/Propcomponent/WrappingHtml/input';
 import CountriesPage from './components/Effect/CountriesPage';
+import CounterMouseClick from './components/HOC/CounterMouseClick';
+import CounterMouseOver from './components/HOC/CounterMouseOver';
 function App() {
 
  
@@ -33,6 +35,8 @@ function App() {
   <Button variant="primary" onClick={e=>console.log(e.target)}>Hellow</Button>
   <Input></Input>
   <CountriesPage/>
+  <CounterMouseClick name={"Click to increment"}/>
+  <CounterMouseOver name={"Hover to increment"}/>
   </ThemeContextProvider>
 
 
